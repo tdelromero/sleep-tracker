@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <title>Welcome to Sleep Tracker</title>
 </head>
 <body>
-    <div class="center-screen">
-        <a href="#" class="btn-regular"> Start your journey </button>
-        <a href="#" class="btn-regular"> Log in </button>
-    </div>
+        <div id="center-screen">
+            <div id="login-start-wrapper">
+                <a href="#" id="btn-start"> Start your journey </a>
+                <a href="#" id="btn-login"> Log in </a>
+            </div>
+            <div id="login-wrapper">
+                <div id="login-error-msg-holder">
+                    <p id="login-error-msg"> Invalid username or password </p>
+                </div>
+                <form id="login-form">
+                    <input type="text" name="username" id="username-field" placeholder="Username">
+                    <input type="password" name="password" id="password-field" placeholder="Password">
+                    <input type="submit" id="submit-login" value="Login">
+                </form>
+            </div>
+        </div>
+<script async type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
