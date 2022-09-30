@@ -1,3 +1,5 @@
+/* LANDING PAGE */
+
 body{
     height:100vh;
     background: rgb(2,0,36);
@@ -26,14 +28,34 @@ body{
 	padding:6px 60px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
+	display:flex;
+	align-items: center;
+	justify-content: center;
 }
-#btn-start:hover, #btn-login:hover {
+
+#btn-start:hover, #btn-login:hover, #submit-login:hover {
 	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
 	background-color:#e9e9e9;
 }
-#btn-start:active, #btn-login:active {
+#btn-start:active, #btn-login:active, #submit-login:active {
 	position:relative;
 	top:1px;
+}
+
+#submit-login{
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:3px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }
 
 #center-screen {
@@ -55,8 +77,14 @@ body{
 }
 
 #login-form{
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:center;
+	position:absolute;
+	right: 2em;
+	top:1em;
+}
+
+#login-error-msg-holder{
+	position:absolute;
+	right: 11.8em;
+	margin-top:1.5em;
+	color:white;
 }
